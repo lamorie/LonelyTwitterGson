@@ -17,7 +17,7 @@ import com.google.gson.reflect.TypeToken;
 
 public class GsonDataManager implements IDataManager {
 
-	private static final String FILENAME = "gsonfile.sav";
+	private static final String FILENAME = "gsonfile2.sav";
 
 	private Gson gson;
 	private Context ctx;

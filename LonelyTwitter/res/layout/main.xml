@@ -13,8 +13,8 @@
     <ListView
         android:id="@+id/oldTweetsList"
         android:layout_width="fill_parent"
-        android:layout_height="263dp"
-        android:layout_weight="1"
+        android:layout_height="196dp"
+        android:layout_weight="1.99"
         android:scrollbars="vertical" >
 
     </ListView>
@@ -24,25 +24,36 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello" />
-    
+
     <EditText
         android:id="@+id/body"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="horizontal" />
+        android:ems="10"
+        android:scrollbars="horizontal" >
+
+        <requestFocus />
+    </EditText>
 
     <Button
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/clear"
-        android:onClick="clear" />
+        android:onClick="clear"
+        android:text="@string/clear" />
 
     <Button
         android:id="@+id/save"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:onClick="save" />
+        android:onClick="save"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showSummary"
+        android:text="Summary" />
 
 </LinearLayout>
